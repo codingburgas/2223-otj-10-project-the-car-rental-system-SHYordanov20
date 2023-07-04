@@ -1,5 +1,7 @@
 #include "VehicleController.h"
 #include <string>
+#include <conio.h>
+
 
 // Constructor
 VehicleController::VehicleController(const std::string& filename):service(filename) 
@@ -14,12 +16,16 @@ void VehicleController::run()
     do 
     {
         // Display menu options
-        std::cout << "Vehicle Management Application" << std::endl;
-        std::cout << "1. Add a new vehicle" << std::endl;
-        std::cout << "2. View all vehicles" << std::endl;
-        std::cout << "3. Update a vehicle" << std::endl;
-        std::cout << "4. Delete a vehicle" << std::endl;
-        std::cout << "0. Exit" << std::endl;
+        std::cout << "+---------------------------------+" << std::endl;
+        std::cout << "|Vehicle Management Application   |" << std::endl;
+        std::cout << "+---------------------------------+" << std::endl;
+        std::cout << "|1. Add a new vehicle             |" << std::endl;
+        std::cout << "|2. View all vehicles             |" << std::endl;
+        std::cout << "|3. Update a vehicle              |" << std::endl;
+        std::cout << "|4. Delete a vehicle              |" << std::endl;
+        std::cout << "|0. Exit                          |" << std::endl;
+        std::cout << "+---------------------------------+" << std::endl;
+
         std::cout << "Enter your choice: ";
 
         std::cin >> choice;
