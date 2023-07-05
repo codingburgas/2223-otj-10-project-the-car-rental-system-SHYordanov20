@@ -3,3 +3,5 @@
 2003,BMW,E46
 2010,Renault,Clio
 2012,Kia,Rio
+2020,Peugeot,207
+2021,Toyota,Tundra
