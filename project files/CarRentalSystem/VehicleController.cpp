@@ -1,6 +1,7 @@
 #include "VehicleController.h"
 #include <string>
 #include <conio.h>
+#include <windows.h>
 
 
 // Constructor
@@ -12,6 +13,9 @@ VehicleController::VehicleController(const std::string& filename):service(filena
 void VehicleController::run() 
 {
     int choice;
+
+    HANDLE consoleHandle = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(consoleHandle, FOREGROUND_BLUE | FOREGROUND_INTENSITY);
 
     do 
     {
